@@ -76,4 +76,3 @@ def get_age(message):
         except Exception:
             bot.send_message(message.from_user.id, 'Цифрами, пожалуйста')
     bot.send_message(message.from_user.id, 'Тебе ' + str(age) + ' лет, тебя зовут ' + name + ' ' + surname + '?')
-dad
