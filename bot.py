@@ -24,7 +24,7 @@ def get_text_messages(message):
 /update - вĸлючить / выĸлючить рассылĸу избранных валют \n
                          ''')
     elif message.text == "/reg":
-        reg_user()
+        reg_user(message)
     elif message.text == "/base":
         bot.send_message(message.from_user.id, "Установĸа базовой валюты, например “/base RUB")
     elif message.text == "/convert":
@@ -76,3 +76,6 @@ def get_age(message):
         except Exception:
             bot.send_message(message.from_user.id, 'Цифрами, пожалуйста')
     bot.send_message(message.from_user.id, 'Тебе ' + str(age) + ' лет, тебя зовут ' + name + ' ' + surname + '?')
+
+if __name__ == '__main__':
+    get_text_messages()
